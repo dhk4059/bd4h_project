@@ -82,8 +82,8 @@ def process_note(discharge_summary, patient_id):
 
     :return: A DataFrame containing symptom-related concepts extracted from the discharge summary
     """
-    # Since MetaMap instance cannot be easily shared across processes, initialize it in each process
-    mm = MetaMap.get_instance('/home/qwer/metamap/public_mm/bin/metamap20')
+    # Init MetaMap instance
+    mm = MetaMap.get_instance(mm_base_dir + mm_exe)
 
     cons, errs = mm.extract_concepts(
         [discharge_summary],
@@ -94,12 +94,13 @@ def process_note(discharge_summary, patient_id):
         prune=30                          # recommended pruning value for memory efficiency.
     )
 
+    # Extract keys of interest from the concepts
     cols = [get_keys_from_mm(cc, keys_of_interest) for cc in cons]
     results_df = pd.DataFrame(cols, columns=keys_of_interest)
 
-    # For each element in 'trigger' column, print it
     for i, row in results_df.iterrows():
-        row['trigger'] = row['trigger'][1:-1] # remove '[' and ']' from the trigger
+        # remove '[' and ']' from the trigger
+        row['trigger'] = row['trigger'][1:-1] 
 
         # Remove negated concepts
         triggers = [trigger for trigger in row['trigger'].split(',')  if trigger[-1] == '0']
