@@ -1,0 +1,299 @@
+patientID,preferred_name
+12197,Back Pain
+12197,Dyspnea
+12197,Chest Pain
+12197,Arthralgia
+12328,Nausea
+12328,Dizziness
+18085,Chest Pain
+18085,Fever
+18172,Nausea
+18172,Chest Pain
+18172,Back Pain
+18172,Arthralgia
+18508,Dizziness
+18508,Back Pain
+19032,Dyspnea
+19032,Chest Pain
+19032,Nausea
+22116,Dyspnea
+22116,Arthralgia
+22116,Fatigue
+22377,Dyspnea
+22377,Arthralgia
+22377,Chest Pain
+22377,Fatigue
+22952,Back Pain
+22952,Chest Pain
+22952,Headache
+23757,Dizziness
+23757,Nausea
+23757,Chest Pain
+24290,Fatigue
+24290,Chest Pain
+24290,Back Pain
+24344,Arthralgia
+24344,Chest Pain
+24344,Dizziness
+24344,Fatigue
+25057,Nausea
+25057,Back Pain
+25068,Coughing
+25068,Headache
+26401,Dyspnea
+26401,Fever
+26706,Fatigue
+26706,Fever
+26706,Back Pain
+28670,Back Pain
+28670,Arthralgia
+28670,Headache
+29642,Dizziness
+29642,Headache
+29642,Nausea
+30000,Headache
+30000,Dyspnea
+30000,Coughing
+30000,Back Pain
+30034,Back Pain
+30034,Chest Pain
+30034,Coughing
+30034,Nausea
+30429,Chest Pain
+30429,Arthralgia
+30429,Fever
+31248,Fatigue
+31248,Coughing
+32288,Fever
+32288,Arthralgia
+34955,Arthralgia
+34955,Back Pain
+34955,Fatigue
+34955,Nausea
+35583,Nausea
+35583,Fatigue
+35606,Headache
+35606,Fever
+37289,Headache
+37289,Fever
+37289,Fatigue
+38029,Dizziness
+38029,Back Pain
+38029,Arthralgia
+38525,Nausea
+38525,Fever
+38525,Dizziness
+38525,Coughing
+40474,Fatigue
+40474,Fever
+40474,Headache
+40512,Chest Pain
+40512,Arthralgia
+40512,Dyspnea
+43030,Fatigue
+43030,Dyspnea
+43030,Dizziness
+44069,Dizziness
+44069,Chest Pain
+44069,Arthralgia
+44069,Back Pain
+46985,Dizziness
+46985,Dyspnea
+46985,Fatigue
+46985,Fever
+47742,Fever
+47742,Nausea
+48440,Nausea
+48440,Dizziness
+48440,Coughing
+48440,Headache
+50220,Nausea
+50220,Dyspnea
+50220,Dizziness
+50220,Chest Pain
+50334,Arthralgia
+50334,Nausea
+50334,Headache
+50515,Chest Pain
+50515,Fever
+50515,Headache
+51282,Headache
+51282,Fever
+51282,Coughing
+51282,Back Pain
+53039,Chest Pain
+53039,Dyspnea
+53039,Back Pain
+53612,Dizziness
+53612,Dyspnea
+53612,Nausea
+54219,Nausea
+54219,Coughing
+58020,Nausea
+58020,Fatigue
+58020,Chest Pain
+58299,Chest Pain
+58299,Dyspnea
+58515,Coughing
+58515,Fatigue
+58515,Headache
+58515,Nausea
+59229,Headache
+59229,Chest Pain
+59229,Fatigue
+59430,Arthralgia
+59430,Coughing
+60057,Coughing
+60057,Dizziness
+60057,Arthralgia
+61332,Nausea
+61332,Dyspnea
+61332,Coughing
+61332,Back Pain
+61792,Dizziness
+61792,Fever
+62828,Chest Pain
+62828,Nausea
+62828,Coughing
+64398,Headache
+64398,Chest Pain
+64398,Dizziness
+64790,Nausea
+64790,Dyspnea
+64996,Fatigue
+64996,Chest Pain
+65102,Nausea
+65102,Coughing
+65102,Chest Pain
+65102,Fatigue
+65845,Fatigue
+65845,Fever
+66064,Chest Pain
+66064,Dyspnea
+66064,Fatigue
+66064,Dizziness
+66105,Headache
+66105,Dyspnea
+66105,Arthralgia
+66207,Nausea
+66207,Headache
+66207,Dizziness
+66207,Dyspnea
+66462,Fatigue
+66462,Dyspnea
+66462,Chest Pain
+67156,Coughing
+67156,Fever
+68224,Chest Pain
+68224,Fatigue
+68224,Dizziness
+68224,Coughing
+68758,Dizziness
+68758,Headache
+68758,Arthralgia
+70064,Arthralgia
+70064,Nausea
+70064,Back Pain
+70387,Back Pain
+70387,Coughing
+71019,Fever
+71019,Nausea
+73615,Dizziness
+73615,Fatigue
+73615,Fever
+73615,Nausea
+74404,Headache
+74404,Dizziness
+74404,Back Pain
+74523,Fatigue
+74523,Fever
+74523,Back Pain
+76264,Fever
+76264,Dizziness
+76264,Dyspnea
+76645,Headache
+76645,Chest Pain
+76900,Nausea
+76900,Coughing
+76900,Back Pain
+76900,Arthralgia
+77576,Headache
+77576,Back Pain
+77576,Dizziness
+77576,Fever
+77704,Arthralgia
+77704,Back Pain
+77704,Dizziness
+79288,Nausea
+79288,Fatigue
+83154,Arthralgia
+83154,Coughing
+83690,Dyspnea
+83690,Headache
+83690,Back Pain
+83690,Chest Pain
+84584,Arthralgia
+84584,Dizziness
+84584,Fever
+84584,Nausea
+85725,Back Pain
+85725,Fever
+85725,Headache
+86139,Dyspnea
+86139,Coughing
+87204,Back Pain
+87204,Dyspnea
+87204,Arthralgia
+88005,Back Pain
+88005,Coughing
+88005,Dyspnea
+89269,Arthralgia
+89269,Chest Pain
+89366,Fatigue
+89366,Headache
+89366,Nausea
+89723,Nausea
+89723,Arthralgia
+90578,Fever
+90578,Fatigue
+90578,Headache
+90586,Back Pain
+90586,Chest Pain
+90586,Coughing
+90835,Fever
+90835,Arthralgia
+91588,Arthralgia
+91588,Dizziness
+91588,Headache
+92130,Coughing
+92130,Nausea
+92567,Coughing
+92567,Fatigue
+92567,Headache
+92567,Nausea
+92813,Back Pain
+92813,Coughing
+92813,Dyspnea
+92813,Headache
+93523,Chest Pain
+93523,Nausea
+94337,Nausea
+94337,Dizziness
+94337,Arthralgia
+94337,Coughing
+94691,Coughing
+94691,Dizziness
+94691,Nausea
+94935,Chest Pain
+94935,Fever
+94935,Headache
+97745,Nausea
+97745,Fever
+97745,Dizziness
+97745,Coughing
+99307,Headache
+99307,Dizziness
+99694,Headache
+99694,Coughing
+99694,Nausea
+99694,Back Pain
