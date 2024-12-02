@@ -15,7 +15,7 @@ Due to MIMIC-III containing sensitive real-life patient data, such data is not i
 
 <br>
 
-Additional datasets can be generated via MetaMap. These datasets, if generated, would be available in the `mimic_data` folder:
+Additional datasets are be generated via MetaMap in `run_metamap.py`. These datasets, if generated, would be available in the `mimic_data` folder:
 - **symptoms_top_50.csv**: contains the symptoms extracted via MetaMap from the MIMIC-III NOTEEVENTS table for the top 50 most-common diseases
 - **symptoms_top_100.csv**: contains the symptoms extracted via MetaMap from the MIMIC-III NOTEEVENTS table for the top 100 most-common diseases
 
