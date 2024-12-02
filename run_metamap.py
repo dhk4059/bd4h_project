@@ -226,7 +226,7 @@ def preprocess_noteevents(top_N=50):
     print(f'Filtered diagnosis codes for the top {top_N} most common ICD9 codes.')
     print()
     
-    st = time.time()
+    # st = time.time()
     # Read the NOTEEVENTS table with only relevant columns
     cols_to_read = ['SUBJECT_ID', 'HADM_ID', 'CATEGORY', 'DESCRIPTION', 'TEXT']
     print('Reading NOTEEVENTS.csv...')
@@ -238,9 +238,9 @@ def preprocess_noteevents(top_N=50):
     noteevents_df['SUBJECT_ID'] = noteevents_df['SUBJECT_ID'].astype(int)
     noteevents_df['HADM_ID'] = noteevents_df['HADM_ID'].astype(int)
 
-    et = round(time.time() - st, 2)
-    print(f"Time to read csv: {et} sec")
-    st = time.time()
+    # et = round(time.time() - st, 2)
+    # print(f"Time to read csv: {et} sec")
+    # st = time.time()
 
     # filter only rows where CATEGORY is 'Discharge summary'
     noteevents_df = noteevents_df[noteevents_df['CATEGORY'] == 'Discharge summary']
@@ -266,8 +266,8 @@ def preprocess_noteevents(top_N=50):
     breakpoint_idx = noteevents_df[noteevents_df["TEXT"].str.len() > breakpoint].index[0]
     print(f'First row index with text length greater than {breakpoint}: {breakpoint_idx}')
 
-    et = round(time.time() - st, 2)
-    print(f"Time to preprocess: {et} sec")
+    # et = round(time.time() - st, 2)
+    # print(f"Time to preprocess: {et} sec")
 
     print(f'Preprocessing complete. Length of NOTEEVENTS.csv after filtering: {len(noteevents_df)}')
     print()
@@ -310,10 +310,10 @@ if __name__ == '__main__':
     # dataset_df = dataset_df.iloc[45000:45020]
     # dataset_df = dataset_df.tail(30)
 
-    st = time.time()
+    # st = time.time()
     # run MetaMap on the DataFrame
     run_metamap(args.start_stop_servers, dataset_df, top_N=args.top_N)
 
-    et = round(time.time() - st, 2)
-    print()
-    print(f"Time to run metamap: {et} sec")
+    # et = round(time.time() - st, 2)
+    # print()
+    # print(f"Time to run metamap: {et} sec")
