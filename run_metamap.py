@@ -5,6 +5,7 @@ import pandas as pd
 import multiprocessing as mp
 import argparse
 import matplotlib.pyplot as plt
+from filter_symptoms import filter_less_frequent
 
 # These semantic types are used to restrict the search to symptom-related concepts
 # See https://metamap.nlm.nih.gov/Docs/SemanticTypes_2018AB.txt for a full list of semantic types
@@ -182,6 +183,9 @@ def run_metamap(start_stop_servers, dataset_df, top_N=50):
 
     # Save results 
     results_df.to_csv(f'mimic_data/symptoms_top_{top_N}.csv', index=False)
+
+    # Filter symptoms
+    filter_less_frequent(f'mimic_data/symptoms_top_{top_N}.csv')
 
     # Stop MetaMap servers (uncomment if you want to stop the servers here)
     if start_stop_servers:
