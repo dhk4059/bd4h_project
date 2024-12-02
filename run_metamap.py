@@ -146,13 +146,13 @@ def run_metamap(start_stop_servers, dataset_df, top_N=50):
     :param start_stop_servers (bool): Flag to start and stop MetaMap servers
     :param dataset_df (pd.DataFrame): DataFrame with 'SUBJECT_ID' and 'TEXT' columns, preprocessed
                                       from NOTEEVENTS table in MIMIC-III dataset.
+    :param top_N (int): Number of top most-common diseases to consider
+
+    :return: none
     """
     # Start MetaMap servers (uncomment if you want to start the servers here)
     if start_stop_servers:
         start_mm_servers(mm_base_dir)
-
-    # Read discharge summaries from CSV file
-    # dataset_df = pd.read_csv('data/summaries.csv')
 
     # Get discharge summaries and patient IDs
     summary_texts = dataset_df['TEXT'].tolist()
@@ -181,7 +181,7 @@ def run_metamap(start_stop_servers, dataset_df, top_N=50):
     results_df.sort_values(by=['SUBJECT_ID', 'HADM_ID'], inplace=True)
 
     # Save results 
-    results_df.to_csv(f'data/symptoms_top_{top_N}.csv', index=False)
+    results_df.to_csv(f'mimic_data/symptoms_top_{top_N}.csv', index=False)
 
     # Stop MetaMap servers (uncomment if you want to stop the servers here)
     if start_stop_servers:
@@ -190,6 +190,10 @@ def run_metamap(start_stop_servers, dataset_df, top_N=50):
 def preprocess_noteevents(top_N=50):
     """
     Preprocess the NOTEEVENTS.csv file to filter only patient IDs and discharge summaries
+
+    :param top_N (int): Number of top most-common diseases to consider
+
+    :return: A DataFrame containing 'SUBJECT_ID', 'HADM_ID', and 'TEXT' columns
     """
     print('Preprocessing NOTEEVENTS.csv...')
 
